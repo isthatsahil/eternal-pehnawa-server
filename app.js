@@ -11,13 +11,15 @@ app.use(express.urlencoded({ limit: "50mb", extended: false }));
 app.use(express.json({ limit: "50mb" }));
 app.use(cors());
 
-app.get("/", (req, res) => {
+const router = express.Router();
+
+router.get("/", (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   res.json({
     message: "Welcome to the API",
   });
 });
-app.post("/api/razorpay/create-order", async (req, res) => {});
+router.post("/api/razorpay/create-order", async (req, res) => {});
 
 app.listen(process.env.PORT || 5000, () =>
   console.log("Server running on ::" + process.env.PORT || 5000)
