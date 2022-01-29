@@ -1,0 +1,34 @@
+{
+  "name": "eternal-pehnawa-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isthatsahil/eternal-pehnawa-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isthatsahil/eternal-pehnawa-server/issues"
+  },
+  "homepage": "https://github.com/isthatsahil/eternal-pehnawa-server#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "razorpay": "^2.8.0",
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.2"
+  }
+}
